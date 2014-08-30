@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<title>Mi Portafolio.la Online</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="/static/css/normalize.css" />
+	<link rel="stylesheet" href="/static/css/estilos.css" />
+</head>
+<body>
+	<header id="yo" class="Header">
+		<nav class="MainMenu">
+			<ul class="MainMenu-list">
+				<li class="MainMenu-item"><a class="MainMenu-link" href="#yo">Yo</a></li>
+				<li class="MainMenu-item"><a class="MainMenu-link" href="#perfil">Perfil</a></li>
+				<li class="MainMenu-item"><a class="MainMenu-link" href="/#trabajo">Trabajo</a></li>
+				<li class="MainMenu-item"><a class="MainMenu-link" href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+		
+		<ul class="Header-list">
+			<li class="Header-item Header-itemLateral">
+				<figure class="Header-imageContainer">
+					<img src="/static/images/mail.jpg" alt="Contactame a huixcospartan@live.com" class="Header-image"/>
+				</figure>
+			</li>
+
+			<li class="Header-item">
+				<figure class="Header-imageContainer">
+					<img src="/static/images/logo.jpg" alt="Imagen Personal" class="Header-image"/>
+					<figcaption class="Header-imageDescription">
+						<a href="http://twitter.com/Huixcospartan/" target="_black" class="Header-link">@Huixcospartan</a>
+					</figcaption>
+				</figure>
+				<p class="Header-name">Alonso Silence</p>
+			</li>
+
+			<li class="Header-item Header-itemLateral">
+				<figure class="Header-imageContainer">
+					<img src="/static/images/otro.jpg" alt="Mas Informacion" class="Header-image"/>
+				</figure>
+			</li>
+		</ul>
+
+
+	</header>
+	<section id="perfil" class="Profile">
+		<h2 class="Profile-title u-title">Mi Perfil</h2>
+		<p class="Profile-description">
+			Hola si llegaste hasta aqui puedes ver mi portafolio y seguirme en las redes sociales
+		</p>
+		<a class="Profile-link" href="http://twiter.com/Huixcospartan/" target="_black">@Huixcospartan</a>
+		<a class="Profile-link" href="http://facebook.com/AlonsoSilence/" target="_black">Alonso Silence</a>
+		<a class="Profile-link" href="http://github.com/AlonsoCampos/" target="_black">Alonso Campos</a>
+	</section>
+	<section id="trabajo" class="Work">
+		<h3 class="Work-title u-title">Mi trabajo</h3>
+		
+		<article id="trabajo-izquierda">
+			<p>Nombre: <span>{{project.titulo}}</span></p>
+			<p>Descripcion: <span>{{project.descripcion}}</span></p>
+			<p>Fecha: <span>{{project.fecha}}</span></p>
+		</article>
+		<article id="trabajo-derecha">
+		<img src="{{project.url_imagen}}">
+		<p>Lenguaje de Programación utilizado: <span>{{project.lenguaje}}</span></p>
+		<p>Url: <a href="{{project.url}}" target="_black">{{project.url}}</a></p>
+		<p>Github: <a href="{{project.github}}" target="_black">{{project.github}}</a></p>
+		<p>Equipo de Desarollo:</p>
+		{% for pro in project.colaborador.all %}
+			<p id="p"><span>{{pro}}</span></p>
+		{% endfor %}
+		</article>
+
+		<p><a id="regresar" href="/#trabajo">Regresar</a></p>
+
+	</section>
+	<footer id="contacto" class="Footer">
+		<div class="Footer-left">
+			<h3 class="Footer-title">Contacto</h3>
+			<p class="Footer-description">Si tienes una sugerencia o quieres trabajar conmigo ponte en contacto con este formulario</p>
+		</div>
+		<form class="Footer-form">
+			<input class="Footer-formInput"type="text" placeholder="Nombre" />
+			<input class="Footer-formInput"type="email" placeholder="Email" />
+			<textarea  class="Footer-textarea"placeholder="Asunto"></textarea>
+			<button class="Footer-button" type="submit">Contacto</button>
+		</form>
+	</footer>
+</body>
+</html>

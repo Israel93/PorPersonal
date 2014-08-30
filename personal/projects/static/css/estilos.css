@@ -1,0 +1,305 @@
+/* MainMenu*/
+.u-title
+{
+	color: #00CCFF;
+	border-bottom: 2px dashed #00CCFF;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: .5em;
+	/*color: #244156;
+	color: #865331;*/
+
+}
+
+
+/* MainMenu*/
+
+.MainMenu
+{
+	background: #1E1E1E;
+	height: 3.76em;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 0;
+	position: fixed;
+}
+.MainMenu-list
+{
+	margin: 0;
+	padding: 0;
+}
+.MainMenu-item
+{
+	display: inline-block;
+}
+.MainMenu-link
+{
+	color: #00DBFF;
+	line-height: 3.76em;
+	margin: 1.65em;
+	text-decoration: none;
+}
+
+/* Header*/
+
+.Header{
+    margin-top: 3.75em;
+    background-image: url('../images/portada.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding:1.2em 0;
+}
+
+.Header-imageContainer{
+    margin: 0;
+}
+
+.Header-image{
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.Header-name,
+.Header-link{
+    color: white;
+}
+
+.Header-link{
+    font-size: 2.1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Header-name{
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.Header-list
+{
+
+}
+.Header-item
+{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+
+.Header-itemLateral
+{
+	margin: 1em;
+}
+.Header-itemLateral figure
+{
+	width: 100%;
+	margin: 0;
+}
+
+.Header-itemLateral figure img 
+{
+	width: 59%;
+	margin: 0;
+}
+
+.Header-itemLateral:hover
+{
+	width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Procfile*/
+
+.Profile
+{
+	text-align: center;
+}
+.Profile-link
+{
+	background: orange;
+	border-radius:2em;
+	color: white;
+	margin-left: .5em;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+
+/* Work*/
+.Work
+{
+	margin-top: 2em;
+	text-align: center;
+}
+.Work-item
+{
+	display: inline-block;
+	margin-right: 1.8em;
+	margin-bottom: 1.8em;
+}
+
+.Work-item:hover
+{
+	color: white;
+	background-color: #00CCFF;
+}
+.Work-imageDescription
+{
+	color: #515151;
+	font-size: 1.1em;
+	font-style: italic;
+}
+.Work-imageContainer
+{
+	margin: 0;
+}
+/*Trabajo*/
+
+#trabajo
+{
+	display: inline-block;
+	width: 100%;
+}
+
+#trabajo-izquierda
+{
+	display: inline-block;
+	text-align: left;
+	width: 40%;
+}
+#trabajo-izquierda p
+{
+	color: #00CCFF;
+	font-style: italic;
+	font-weight: bold;
+}
+#trabajo-izquierda p span
+{
+	color: black;
+	font-weight: normal;
+}
+
+#trabajo-derecha
+{
+	display: inline-block;
+	width: 50%;
+}
+#trabajo-derecha a
+{
+	color: orange;
+	font-style: italic;
+	font-weight: normal;
+}
+
+#trabajo-derecha p 
+{
+	color: #00CCFF;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#trabajo-derecha p span
+{
+	color: black;
+	font-weight: normal;
+}
+#p
+{
+	color: black;
+	font-style: italic;
+	font-weight: normal;
+}
+#regresar
+{
+	color: white;
+	padding: 1em 1.5em;
+	border-radius: 1em;
+	text-decoration: none;
+	background: orange;
+	margin: 1em 0;
+}
+#regresar:hover
+{
+	color: black;
+	background: #00CCFF;
+}
+
+/*Footer*/
+.Footer
+{
+	background-image: url('../images/footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2em;
+	text-align: center;
+}
+
+.Footer-form
+{
+	display: inline-block;
+}
+.Footer-left
+{
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 32em;
+}
+.Footer-title
+{
+	color: black;
+
+}
+.Footer-formInput,.Footer-textarea
+{
+	background: white;
+	border-radius: 2em;
+	border: 1px solid black;
+	display: block;
+	margin: 0 auto 1em;
+	padding: .5em;
+
+}
+.Footer-textarea
+{
+	resize:none;
+}
+.Footer-button
+{
+	border: none;
+	background: orange;
+	border-radius: 1em;
+	color: white;
+	padding: 1em;
+}
+.Footer-button:hover
+{
+	background: #EEE;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
